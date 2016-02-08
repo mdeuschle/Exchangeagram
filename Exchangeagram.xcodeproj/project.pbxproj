@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A8CFFB5D1C6905BA000E1A7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */; };
-		A8CFFB5F1C6905BA000E1A7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB5E1C6905BA000E1A7E /* ViewController.swift */; };
 		A8CFFB621C6905BA000E1A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CFFB601C6905BA000E1A7E /* Main.storyboard */; };
 		A8CFFB651C6905BA000E1A7E /* Exchangeagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB631C6905BA000E1A7E /* Exchangeagram.xcdatamodeld */; };
 		A8CFFB671C6905BA000E1A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CFFB661C6905BA000E1A7E /* Assets.xcassets */; };
 		A8CFFB6A1C6905BA000E1A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CFFB681C6905BA000E1A7E /* LaunchScreen.storyboard */; };
 		A8CFFB751C6905BA000E1A7E /* ExchangeagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB741C6905BA000E1A7E /* ExchangeagramTests.swift */; };
 		A8CFFB801C6905BA000E1A7E /* ExchangeagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB7F1C6905BA000E1A7E /* ExchangeagramUITests.swift */; };
+		A8CFFB8E1C6906C7000E1A7E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */; };
+		A8CFFB901C690883000E1A7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB8F1C690883000E1A7E /* SignUpViewController.swift */; };
+		A8CFFB921C691109000E1A7E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */; };
+		A8CFFB941C691709000E1A7E /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB931C691709000E1A7E /* HomeCollectionViewController.swift */; };
+		A8CFFB961C6919E0000E1A7E /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */; };
+		A8CFFB981C691BC7000E1A7E /* FollowersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */; };
+		A8CFFB9A1C691F3A000E1A7E /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB991C691F3A000E1A7E /* PictureCell.swift */; };
+		A8CFFB9C1C691F8C000E1A7E /* HomeResusableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +44,6 @@
 /* Begin PBXFileReference section */
 		A8CFFB591C6905BA000E1A7E /* Exchangeagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exchangeagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A8CFFB5E1C6905BA000E1A7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8CFFB611C6905BA000E1A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8CFFB641C6905BA000E1A7E /* Exchangeagram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Exchangeagram.xcdatamodel; sourceTree = "<group>"; };
 		A8CFFB661C6905BA000E1A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		A8CFFB7B1C6905BA000E1A7E /* ExchangeagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CFFB7F1C6905BA000E1A7E /* ExchangeagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeagramUITests.swift; sourceTree = "<group>"; };
 		A8CFFB811C6905BA000E1A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
+		A8CFFB8F1C690883000E1A7E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		A8CFFB931C691709000E1A7E /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersTableViewCell.swift; sourceTree = "<group>"; };
+		A8CFFB991C691F3A000E1A7E /* PictureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
+		A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeResusableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +113,16 @@
 		A8CFFB5B1C6905BA000E1A7E /* Exchangeagram */ = {
 			isa = PBXGroup;
 			children = (
-				A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */,
-				A8CFFB5E1C6905BA000E1A7E /* ViewController.swift */,
 				A8CFFB601C6905BA000E1A7E /* Main.storyboard */,
+				A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */,
+				A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */,
+				A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */,
+				A8CFFB8F1C690883000E1A7E /* SignUpViewController.swift */,
+				A8CFFB991C691F3A000E1A7E /* PictureCell.swift */,
+				A8CFFB931C691709000E1A7E /* HomeCollectionViewController.swift */,
+				A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */,
+				A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */,
+				A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */,
 				A8CFFB661C6905BA000E1A7E /* Assets.xcassets */,
 				A8CFFB681C6905BA000E1A7E /* LaunchScreen.storyboard */,
 				A8CFFB6B1C6905BA000E1A7E /* Info.plist */,
@@ -259,9 +280,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8CFFB5F1C6905BA000E1A7E /* ViewController.swift in Sources */,
 				A8CFFB651C6905BA000E1A7E /* Exchangeagram.xcdatamodeld in Sources */,
 				A8CFFB5D1C6905BA000E1A7E /* AppDelegate.swift in Sources */,
+				A8CFFB961C6919E0000E1A7E /* FollowersViewController.swift in Sources */,
+				A8CFFB921C691109000E1A7E /* ResetPasswordViewController.swift in Sources */,
+				A8CFFB9C1C691F8C000E1A7E /* HomeResusableVC.swift in Sources */,
+				A8CFFB941C691709000E1A7E /* HomeCollectionViewController.swift in Sources */,
+				A8CFFB9A1C691F3A000E1A7E /* PictureCell.swift in Sources */,
+				A8CFFB901C690883000E1A7E /* SignUpViewController.swift in Sources */,
+				A8CFFB8E1C6906C7000E1A7E /* SignInViewController.swift in Sources */,
+				A8CFFB981C691BC7000E1A7E /* FollowersTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
