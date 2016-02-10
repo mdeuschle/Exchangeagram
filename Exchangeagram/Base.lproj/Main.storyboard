@@ -374,7 +374,7 @@
         <scene sceneID="vKH-BW-ZNn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ibl-44-Ns6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="2j2-yh-1Bq"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="j5d-Ph-XT8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TGK-h9-IcK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
