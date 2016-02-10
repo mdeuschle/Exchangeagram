@@ -205,12 +205,12 @@
 			isa = PBXGroup;
 			children = (
 				A8CFFB601C6905BA000E1A7E /* Main.storyboard */,
-				A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */,
 				4C77A1831C6BDDF600AA8126 /* DataService.swift */,
-				4C77A1851C6BDE4B00AA8126 /* Twitter Functionality.swift */,
-				A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */,
+				A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */,
 				A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */,
+				4C77A1851C6BDE4B00AA8126 /* Twitter Functionality.swift */,
 				A8CFFB8F1C690883000E1A7E /* SignUpViewController.swift */,
+				A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */,
 				A8CFFB991C691F3A000E1A7E /* PictureCell.swift */,
 				A8CFFB931C691709000E1A7E /* HomeCollectionViewController.swift */,
 				A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */,
