@@ -41,6 +41,7 @@
 		A841542E1C6BA21200621871 /* unlike.png in Resources */ = {isa = PBXBuildFile; fileRef = A841540D1C6BA21200621871 /* unlike.png */; };
 		A84154301C6BA53000621871 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841542F1C6BA53000621871 /* FeedTableViewController.swift */; };
 		A84154321C6BA63D00621871 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154311C6BA63D00621871 /* FeedTableViewCell.swift */; };
+		A84154341C6BD27800621871 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154331C6BD27800621871 /* SearchViewController.swift */; };
 		A8CFFB5D1C6905BA000E1A7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */; };
 		A8CFFB621C6905BA000E1A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CFFB601C6905BA000E1A7E /* Main.storyboard */; };
 		A8CFFB651C6905BA000E1A7E /* Exchangeagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB631C6905BA000E1A7E /* Exchangeagram.xcdatamodeld */; };
@@ -110,6 +111,7 @@
 		A841540D1C6BA21200621871 /* unlike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlike.png; sourceTree = "<group>"; };
 		A841542F1C6BA53000621871 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		A84154311C6BA63D00621871 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		A84154331C6BD27800621871 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A8CFFB591C6905BA000E1A7E /* Exchangeagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exchangeagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CFFB611C6905BA000E1A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 				A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */,
 				A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */,
 				A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */,
+				A84154331C6BD27800621871 /* SearchViewController.swift */,
 				A8CFFB601C6905BA000E1A7E /* Main.storyboard */,
 				A8CFFB661C6905BA000E1A7E /* Assets.xcassets */,
 				A8CFFB681C6905BA000E1A7E /* LaunchScreen.storyboard */,
@@ -467,6 +470,7 @@
 				A8CFFB921C691109000E1A7E /* ResetPasswordViewController.swift in Sources */,
 				A8CFFB9C1C691F8C000E1A7E /* HomeResusableVC.swift in Sources */,
 				A8CFFB941C691709000E1A7E /* HomeCollectionViewController.swift in Sources */,
+				A84154341C6BD27800621871 /* SearchViewController.swift in Sources */,
 				A8CFFB9A1C691F3A000E1A7E /* PictureCell.swift in Sources */,
 				A8CFFB901C690883000E1A7E /* SignUpViewController.swift in Sources */,
 				A8CFFB8E1C6906C7000E1A7E /* SignInViewController.swift in Sources */,

@@ -862,10 +862,10 @@
             </objects>
             <point key="canvasLocation" x="1836.5" y="1338.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="mYt-ET-HT0">
             <objects>
-                <viewController id="u6T-kh-AB3" sceneMemberID="viewController">
+                <viewController id="u6T-kh-AB3" customClass="SearchViewController" customModule="Exchangeagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mLD-HC-96I"/>
                         <viewControllerLayoutGuide type="bottom" id="GVX-lD-AId"/>
@@ -873,10 +873,19 @@
                     <view key="view" contentMode="scaleToFill" id="ew8-4n-vUP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zwo-Cv-5Ul">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="nAb-x5-c6d"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Zwo-Cv-5Ul" id="lrg-Ym-eEf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZE-nv-RTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
