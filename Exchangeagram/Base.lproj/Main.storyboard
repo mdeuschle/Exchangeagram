@@ -130,39 +130,52 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter Password" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="EK1-Qz-hYb">
-                                        <rect key="frame" x="20" y="192" width="212" height="30"/>
+                                        <rect key="frame" x="8" y="192" width="359" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Full Name" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Ymn-fa-aCc">
-                                        <rect key="frame" x="20" y="295" width="212" height="30"/>
+                                        <rect key="frame" x="8" y="295" width="353" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Your Bio Info" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2tJ-Hb-5ZW">
-                                        <rect key="frame" x="20" y="333" width="212" height="30"/>
+                                        <rect key="frame" x="8" y="333" width="353" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter a Website" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="63c-Wl-wQ0">
-                                        <rect key="frame" x="20" y="371" width="212" height="30"/>
+                                        <rect key="frame" x="8" y="371" width="353" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbj-Ba-6pf">
-                                        <rect key="frame" x="20" y="422" width="96" height="30"/>
+                                        <rect key="frame" x="8" y="422" width="96" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="onSignUpButtonPressed:" destination="nWI-tr-Tw2" eventType="touchUpInside" id="pcl-0O-osq"/>
+                                            <action selector="onSignUpButtonPressed:" destination="nWI-tr-Tw2" eventType="touchUpInside" id="3IO-kP-yp3"/>
                                             <segue destination="1vv-WW-Do3" kind="presentation" identifier="BackToLoginSegue" id="x17-w1-tjU"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email Address" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="vkY-59-dO7">
+                                        <rect key="frame" x="8" y="230" width="359" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blankimage" translatesAutoresizingMaskIntoConstraints="NO" id="kTO-R5-cmN">
+                                        <rect key="frame" x="147" y="28" width="80" height="80"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="pYB-fe-ieV">
+                                        <rect key="frame" x="8" y="116" width="359" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xaa-bt-vWs">
-                                        <rect key="frame" x="136" y="422" width="96" height="30"/>
+                                        <rect key="frame" x="271" y="422" width="96" height="30"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -172,19 +185,6 @@
                                             <action selector="onCancelButtonClicked:" destination="nWI-tr-Tw2" eventType="touchUpInside" id="eJm-Gy-I45"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email Address" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="vkY-59-dO7">
-                                        <rect key="frame" x="20" y="230" width="212" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blankimage" translatesAutoresizingMaskIntoConstraints="NO" id="kTO-R5-cmN">
-                                        <rect key="frame" x="147" y="14" width="80" height="80"/>
-                                    </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="pYB-fe-ieV">
-                                        <rect key="frame" x="8" y="116" width="359" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -192,17 +192,17 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="bioTxt" destination="2tJ-Hb-5ZW" id="IqM-o1-QQb"/>
-                        <outlet property="cancelButton" destination="Xaa-bt-vWs" id="YWj-PI-YTZ"/>
-                        <outlet property="emailTxt" destination="vkY-59-dO7" id="oEZ-J2-w0M"/>
-                        <outlet property="fullNameTxt" destination="Ymn-fa-aCc" id="pwR-Sr-vBC"/>
-                        <outlet property="imageView" destination="kTO-R5-cmN" id="rN6-xq-Pp5"/>
-                        <outlet property="passwordTxt" destination="Pk3-fa-qkO" id="mx0-1p-7ny"/>
-                        <outlet property="repeatPasswordTxt" destination="EK1-Qz-hYb" id="2nh-O1-0yK"/>
-                        <outlet property="scroller" destination="8Aj-sg-X5Z" id="TAh-hz-tZI"/>
-                        <outlet property="signUpButton" destination="Cbj-Ba-6pf" id="EBr-4a-iB2"/>
-                        <outlet property="usernameTxt" destination="pYB-fe-ieV" id="5JF-Cp-3me"/>
-                        <outlet property="websiteTxt" destination="63c-Wl-wQ0" id="v1l-8P-9u3"/>
+                        <outlet property="bioTxt" destination="2tJ-Hb-5ZW" id="67O-tB-6Qr"/>
+                        <outlet property="cancelButton" destination="Xaa-bt-vWs" id="gGb-Ac-pZM"/>
+                        <outlet property="emailTxt" destination="vkY-59-dO7" id="n5L-sA-lUW"/>
+                        <outlet property="fullNameTxt" destination="Ymn-fa-aCc" id="FHU-7O-nyx"/>
+                        <outlet property="imageView" destination="kTO-R5-cmN" id="qzw-ce-NRO"/>
+                        <outlet property="passwordTxt" destination="Pk3-fa-qkO" id="imc-Lk-pb7"/>
+                        <outlet property="repeatPasswordTxt" destination="EK1-Qz-hYb" id="cwp-83-msc"/>
+                        <outlet property="scroller" destination="8Aj-sg-X5Z" id="4uy-Iw-Rac"/>
+                        <outlet property="signUpButton" destination="Cbj-Ba-6pf" id="nDP-Ej-Zsn"/>
+                        <outlet property="usernameTxt" destination="pYB-fe-ieV" id="VsM-po-KK8"/>
+                        <outlet property="websiteTxt" destination="63c-Wl-wQ0" id="sbu-yq-vj8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I4A-tt-pgB" userLabel="First Responder" sceneMemberID="firstResponder"/>

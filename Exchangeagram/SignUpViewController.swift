@@ -137,7 +137,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         let fullname = fullNameTxt.text
         let bio = bioTxt.text
         let website = websiteTxt.text
-        let image = imageView.image
+        //let image = imageView.image
         
         //Dismisses the keyboard
         self.view.endEditing(true)
@@ -176,7 +176,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
                     
                 else {
                     DataService.ds.REF_BASE.authUser(email, password: password, withCompletionBlock: { (error, authData) -> Void in
-                        let user = ["password": authData.provider!, "email": email!, "username": username!, "Full Name": fullname!, "bio": bio!, "website": website!, "image": image!]
+                        let user = ["password": authData.provider!, "email": email!, "username": username!, "Full Name": fullname!, "bio": bio!, "website": website!]
                         DataService.ds.createNewAccount(authData.uid, user: user)
                         
                         
