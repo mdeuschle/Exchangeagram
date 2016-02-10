@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter User Name" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="gRp-Ud-OEB">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email Address" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="gRp-Ud-OEB">
                                 <rect key="frame" x="16" y="135" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Sya-MG-BD3"/>
@@ -77,6 +77,13 @@
                                 </state>
                                 <connections>
                                     <segue destination="Zuw-tI-S8u" kind="presentation" id="Phf-q3-cur"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF4-uY-4Uu" userLabel="Twitter Login Button">
+                                <rect key="frame" x="168" y="325" width="40" height="40"/>
+                                <state key="normal" backgroundImage="twitterlogo"/>
+                                <connections>
+                                    <action selector="onTwitterButtonPressed:" destination="1vv-WW-Do3" eventType="touchUpInside" id="hFZ-WT-bsj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -861,6 +868,7 @@
         <image name="more.png" width="270" height="270"/>
         <image name="pbg.jpg" width="200" height="200"/>
         <image name="pp.jpg" width="96" height="96"/>
+        <image name="twitterlogo" width="2000" height="2000"/>
         <image name="unlike.png" width="270" height="270"/>
     </resources>
 </document>
