@@ -46,7 +46,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         setCurrentUser()
         getCurrentUserPhotos()
         
-        collectionViewFlow.itemSize = CGSize.init(width: view.frame.width/3, height: view.frame.width/3)
+        collectionViewFlow.itemSize = CGSize.init(width: view.frame.width / 3, height: view.frame.width / 3)
     }
     
     //MARK: Custom function implemented in the viewWillAppear
@@ -56,12 +56,12 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             
             self.currentUser = snapshot.value as! Dictionary<String, AnyObject>
             
-            self.fullNameLabel.text? = self.currentUser["username"]!.uppercaseString
+            //self.fullNameLabel.text? = self.currentUser["username"]!.uppercaseString
             
             self.fullNameLabel.text = self.currentUser["name"] as? String
             
-            if (self.currentUser["Biography Info"] != nil) {
-                self.bioLabel.text = self.currentUser["Biography Info"] as? String
+            if (self.currentUser["bio"] != nil) {
+                self.bioLabel.text = self.currentUser["bio"] as? String
             }
             else {
                 self.bioLabel.text = "Please click 'Edit Profile' button to add a biography snippet."

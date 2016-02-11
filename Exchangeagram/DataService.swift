@@ -44,7 +44,7 @@ class DataService {
     }
     
     func createNewAccount(uid:String, user: Dictionary<String, AnyObject>) {
-        REF_USER.childByAppendingPath(uid).setValue(user)
+        REF_USER.childByAppendingPath(uid).updateChildValues(user)
     }
     
     func createFireBasePost(uid:String, post: Dictionary<String, AnyObject>) {
