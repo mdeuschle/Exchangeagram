@@ -24,6 +24,8 @@
 		A84154301C6BA53000621871 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841542F1C6BA53000621871 /* FeedTableViewController.swift */; };
 		A84154321C6BA63D00621871 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154311C6BA63D00621871 /* FeedTableViewCell.swift */; };
 		A84154341C6BD27800621871 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154331C6BD27800621871 /* SearchViewController.swift */; };
+		A84154361C6C3A7000621871 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154351C6C3A7000621871 /* CollectionViewCell.swift */; };
+		A84154381C6CF83F00621871 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154371C6CF83F00621871 /* CommentsViewController.swift */; };
 		A8CFFB5D1C6905BA000E1A7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */; };
 		A8CFFB621C6905BA000E1A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CFFB601C6905BA000E1A7E /* Main.storyboard */; };
 		A8CFFB651C6905BA000E1A7E /* Exchangeagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB631C6905BA000E1A7E /* Exchangeagram.xcdatamodeld */; };
@@ -77,6 +79,8 @@
 		A841542F1C6BA53000621871 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		A84154311C6BA63D00621871 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		A84154331C6BD27800621871 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A84154351C6C3A7000621871 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		A84154371C6CF83F00621871 /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		A8CFFB591C6905BA000E1A7E /* Exchangeagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exchangeagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CFFB611C6905BA000E1A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				A8CFFB601C6905BA000E1A7E /* Main.storyboard */,
+				A84154371C6CF83F00621871 /* CommentsViewController.swift */,
+				A84154351C6C3A7000621871 /* CollectionViewCell.swift */,
 				4C77A1831C6BDDF600AA8126 /* DataService.swift */,
 				A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */,
 				A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */,
@@ -427,11 +433,13 @@
 			files = (
 				A8CFFB651C6905BA000E1A7E /* Exchangeagram.xcdatamodeld in Sources */,
 				4C77A1841C6BDDF600AA8126 /* DataService.swift in Sources */,
+				A84154361C6C3A7000621871 /* CollectionViewCell.swift in Sources */,
 				A84154321C6BA63D00621871 /* FeedTableViewCell.swift in Sources */,
 				4C77A1901C6BE1C200AA8126 /* TwitterAuthHelper.m in Sources */,
 				4C77A1861C6BDE4B00AA8126 /* Twitter Functionality.swift in Sources */,
 				A8CFFB5D1C6905BA000E1A7E /* AppDelegate.swift in Sources */,
 				A84154301C6BA53000621871 /* FeedTableViewController.swift in Sources */,
+				A84154381C6CF83F00621871 /* CommentsViewController.swift in Sources */,
 				A8CFFB961C6919E0000E1A7E /* FollowersViewController.swift in Sources */,
 				A8CFFB921C691109000E1A7E /* ResetPasswordViewController.swift in Sources */,
 				A8CFFB9C1C691F8C000E1A7E /* HomeResusableVC.swift in Sources */,

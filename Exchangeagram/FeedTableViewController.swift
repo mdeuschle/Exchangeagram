@@ -13,6 +13,7 @@ class FeedTableViewController: UITableViewController {
 
     var feedArray:[String] = []
 
+    var tapped = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +38,32 @@ class FeedTableViewController: UITableViewController {
 
         cell.postImage.image = UIImage(named: feedArray[indexPath.row])
 
+        cell.likeButton.tag = indexPath.row;
+
         return cell
     }
+
+    @IBAction func onLikeButtonPressed(sender: UIButton) {
+
+        if sender.tag == 0 {
+
+            sender.setImage(UIImage(named: "like"), forState: UIControlState.Normal)
+            self.tapped = !tapped;
+        }
+    }
+
+
+//    if toggleState == 1 {
+//    player.play()
+//    toggleState = 2
+//    playBtn.setImage(imgPlay,forState:UIControlState.Normal)
+//    } else {
+//    player.pause()
+//    toggleState = 1
+//    playBtn.setImage(imgPause,forState:UIControlState.Normal)
+//    }
+//}
+
 
     /*
     // Override to support conditional editing of the table view.
