@@ -27,6 +27,8 @@
 		4C77A1AE1C6C2ADB00AA8126 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C77A1AD1C6C2ADB00AA8126 /* Pacifico.ttf */; };
 		4C77A1B11C6CD48300AA8126 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1B01C6CD48300AA8126 /* ProfileViewController.swift */; };
 		4C77A1B31C6CD63500AA8126 /* EditUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1B21C6CD63500AA8126 /* EditUserViewController.swift */; };
+		4C77A1B61C6D344600AA8126 /* PhotoFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1B51C6D344600AA8126 /* PhotoFeedTableViewCell.swift */; };
+		4C77A1B81C6D36BF00AA8126 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1B71C6D36BF00AA8126 /* Photos.swift */; };
 		A84154301C6BA53000621871 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841542F1C6BA53000621871 /* FeedTableViewController.swift */; };
 		A84154321C6BA63D00621871 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154311C6BA63D00621871 /* FeedTableViewCell.swift */; };
 		A84154341C6BD27800621871 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154331C6BD27800621871 /* SearchViewController.swift */; };
@@ -84,6 +86,8 @@
 		4C77A1AD1C6C2ADB00AA8126 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pacifico.ttf; path = Exchangeagram/Pacifico.ttf; sourceTree = SOURCE_ROOT; };
 		4C77A1B01C6CD48300AA8126 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4C77A1B21C6CD63500AA8126 /* EditUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserViewController.swift; sourceTree = "<group>"; };
+		4C77A1B51C6D344600AA8126 /* PhotoFeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFeedTableViewCell.swift; sourceTree = "<group>"; };
+		4C77A1B71C6D36BF00AA8126 /* Photos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		A841542F1C6BA53000621871 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		A84154311C6BA63D00621871 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		A84154331C6BD27800621871 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +189,16 @@
 			name = "Support Files";
 			sourceTree = "<group>";
 		};
+		4C77A1B41C6D305300AA8126 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A8CFFB991C691F3A000E1A7E /* PictureCell.swift */,
+				4C77A1B51C6D344600AA8126 /* PhotoFeedTableViewCell.swift */,
+				4C77A1B71C6D36BF00AA8126 /* Photos.swift */,
+			);
+			name = "Custom Classes";
+			sourceTree = "<group>";
+		};
 		5A9503512EBE032493E907B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,13 +242,13 @@
 				A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */,
 				4C77A1B01C6CD48300AA8126 /* ProfileViewController.swift */,
 				4C77A1B21C6CD63500AA8126 /* EditUserViewController.swift */,
-				A8CFFB991C691F3A000E1A7E /* PictureCell.swift */,
 				A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */,
 				A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */,
 				A84154331C6BD27800621871 /* SearchViewController.swift */,
 				A84154311C6BA63D00621871 /* FeedTableViewCell.swift */,
 				A841542F1C6BA53000621871 /* FeedTableViewController.swift */,
 				A8CFFB661C6905BA000E1A7E /* Assets.xcassets */,
+				4C77A1B41C6D305300AA8126 /* Custom Classes */,
 				4C77A1A51C6BE58B00AA8126 /* Support Files */,
 			);
 			path = Exchangeagram;
@@ -441,8 +455,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C77A1B81C6D36BF00AA8126 /* Photos.swift in Sources */,
 				A8CFFB651C6905BA000E1A7E /* Exchangeagram.xcdatamodeld in Sources */,
 				4C77A1841C6BDDF600AA8126 /* DataService.swift in Sources */,
+				4C77A1B61C6D344600AA8126 /* PhotoFeedTableViewCell.swift in Sources */,
 				A84154321C6BA63D00621871 /* FeedTableViewCell.swift in Sources */,
 				4C77A1901C6BE1C200AA8126 /* TwitterAuthHelper.m in Sources */,
 				4C77A1861C6BDE4B00AA8126 /* Twitter Functionality.swift in Sources */,

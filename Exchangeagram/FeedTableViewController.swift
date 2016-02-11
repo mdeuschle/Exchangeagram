@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+
+var currentUser: String?
+
 
 class FeedTableViewController: UITableViewController {
 
@@ -18,6 +22,9 @@ class FeedTableViewController: UITableViewController {
         super.viewDidLoad()
 
         self.title = "Exchangeagram"
+        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        currentUser = userDefaults.valueForKey("uid") as? String
 
         feedArray = ["image1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg","image6.jpg","image7.jpg","image1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg","image6.jpg","image7.jpg"]
 
