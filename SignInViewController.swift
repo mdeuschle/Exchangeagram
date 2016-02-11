@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FBSDKLoginKit
 //import DataService
 
 class SignInViewController: UIViewController {
@@ -17,11 +18,13 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     
     //Buttons
-    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    //@IBOutlet weak var loginButton: FBSDKLoginButton!
     
     var ref: Firebase!
     
@@ -33,6 +36,16 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Font change of the Instagram label
+        titleLabel.font = UIFont(name: "Pacifico", size: 25)
+        
+        //Alignment for all types of devices
+        titleLabel.frame = CGRectMake(10, 80, self.view.frame.size.width - 20, 50)
+        usernameTxt.frame = CGRectMake(10, titleLabel.frame.origin.y + 70, self.view.frame.size.width - 20, 30)
+        passwordTxt.frame = CGRectMake(10, usernameTxt.frame.origin.y + 40, self.view.frame.size.width - 20, 30)
+        forgotPasswordButton.frame = CGRectMake(10, passwordTxt.frame.origin.y + 30, self.view.frame.size.width - 20, 30)
+        signInButton.frame = CGRectMake(20, forgotPasswordButton.frame.origin.y + 40, self.view.frame.size.width / 4, 30)
+        signUpButton.frame = CGRectMake(self.view.frame.size.width - self.view.frame.size.width / 4 - 20, signInButton.frame.origin.y , self.view.frame.size.width / 4, 30)
         
         // tap to hide keyboard
         let hideTap = UITapGestureRecognizer(target: self, action: "hideKeyboard:")
@@ -40,12 +53,18 @@ class SignInViewController: UIViewController {
         self.view.userInteractionEnabled = true
         self.view.addGestureRecognizer(hideTap)
         
-        
+        //Sets the background image
         let backgroundImage = UIImageView(frame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height))
         backgroundImage.image = UIImage(named: "loginBackgroundImage.png")
         backgroundImage.layer.zPosition = -1
         self.view.addSubview(backgroundImage)
         
+//        //Facebook login prompt
+//        let loginButton = FBSDKLoginButton()
+//        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+//        loginButton.center = self.view.center
+//        [self.view .addSubview(loginButton)]
+//        
         
     }
     
@@ -98,7 +117,7 @@ class SignInViewController: UIViewController {
                     
                     DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { (error, authData) -> Void in
                         
-                        let user = ["provider": authData.provider!, "Blah":"emailTest"]
+                        let user = ["provider": authData.provider!, "email":email]
                         DataService.ds.createNewAccount(authData.uid, user: user)
                         
                         // remember user or save in App Memeory did the user login or not

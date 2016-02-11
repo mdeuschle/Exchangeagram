@@ -9,14 +9,14 @@
 import Foundation
 import Firebase
 
-//let URL_BASE = "https://glaring-inferno-7407.firebaseio.com/"
 let URL_BASE = "https://exchangeogram.firebaseio.com/"
 
 class DataService {
     
     static let ds = DataService()
+    
     private var _REF_BASE = Firebase(url: "\(URL_BASE)")
-    private var _REF_POST = Firebase(url: "\(URL_BASE)/post")
+    //private var _REF_POST = Firebase(url: "\(URL_BASE)/post")
     private var _REF_USER = Firebase(url: "\(URL_BASE)/user")
     private var _PHOTO_REF = Firebase(url: "\(URL_BASE)/photos")
     
@@ -24,9 +24,9 @@ class DataService {
         return _REF_BASE
     }
     
-    var REF_POST: Firebase {
-        return _REF_POST
-    }
+//    var REF_POST: Firebase {
+//        return _REF_POST
+//    }
     
     var REF_USER: Firebase {
         return _REF_USER
@@ -36,8 +36,7 @@ class DataService {
         
         let userID = NSUserDefaults.standardUserDefaults().valueForKey("uid") as! String
         let currentUser = Firebase(url: "\(REF_BASE)").childByAppendingPath("users").childByAppendingPath(userID)
-        
-        return currentUser
+        return currentUser!
     }
     
     var PHOTO_REF: Firebase {
@@ -49,7 +48,11 @@ class DataService {
     }
     
     func createFireBasePost(uid:String, post: Dictionary<String, AnyObject>) {
-        REF_POST.childByAppendingPath(uid).setValue(post)
+        
+        let firebaseNewPost = PHOTO_REF.childByAutoId()
+        firebaseNewPost.setValue(post)
+        
+        //REF_POST.childByAppendingPath(uid).setValue(post)
     }
     
     

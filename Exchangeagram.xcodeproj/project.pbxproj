@@ -21,6 +21,12 @@
 		4C77A1A01C6BE4C800AA8126 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C77A19F1C6BE4C800AA8126 /* Security.framework */; };
 		4C77A1A21C6BE4D300AA8126 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C77A1A11C6BE4D300AA8126 /* StoreKit.framework */; };
 		4C77A1A41C6BE4E800AA8126 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C77A1A31C6BE4E800AA8126 /* SystemConfiguration.framework */; };
+		4C77A1A71C6C232200AA8126 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C77A1A61C6C232200AA8126 /* FBSDKShareKit.framework */; };
+		4C77A1A91C6C232D00AA8126 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C77A1A81C6C232D00AA8126 /* FBSDKLoginKit.framework */; };
+		4C77A1AB1C6C233500AA8126 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C77A1AA1C6C233500AA8126 /* FBSDKCoreKit.framework */; };
+		4C77A1AE1C6C2ADB00AA8126 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C77A1AD1C6C2ADB00AA8126 /* Pacifico.ttf */; };
+		4C77A1B11C6CD48300AA8126 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1B01C6CD48300AA8126 /* ProfileViewController.swift */; };
+		4C77A1B31C6CD63500AA8126 /* EditUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1B21C6CD63500AA8126 /* EditUserViewController.swift */; };
 		A84154301C6BA53000621871 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841542F1C6BA53000621871 /* FeedTableViewController.swift */; };
 		A84154321C6BA63D00621871 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154311C6BA63D00621871 /* FeedTableViewCell.swift */; };
 		A84154341C6BD27800621871 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154331C6BD27800621871 /* SearchViewController.swift */; };
@@ -34,11 +40,9 @@
 		A8CFFB8E1C6906C7000E1A7E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */; };
 		A8CFFB901C690883000E1A7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB8F1C690883000E1A7E /* SignUpViewController.swift */; };
 		A8CFFB921C691109000E1A7E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */; };
-		A8CFFB941C691709000E1A7E /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB931C691709000E1A7E /* HomeCollectionViewController.swift */; };
 		A8CFFB961C6919E0000E1A7E /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */; };
 		A8CFFB981C691BC7000E1A7E /* FollowersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */; };
 		A8CFFB9A1C691F3A000E1A7E /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB991C691F3A000E1A7E /* PictureCell.swift */; };
-		A8CFFB9C1C691F8C000E1A7E /* HomeResusableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,12 @@
 		4C77A19F1C6BE4C800AA8126 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4C77A1A11C6BE4D300AA8126 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4C77A1A31C6BE4E800AA8126 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4C77A1A61C6C232200AA8126 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		4C77A1A81C6C232D00AA8126 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		4C77A1AA1C6C233500AA8126 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		4C77A1AD1C6C2ADB00AA8126 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pacifico.ttf; path = Exchangeagram/Pacifico.ttf; sourceTree = SOURCE_ROOT; };
+		4C77A1B01C6CD48300AA8126 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4C77A1B21C6CD63500AA8126 /* EditUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserViewController.swift; sourceTree = "<group>"; };
 		A841542F1C6BA53000621871 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		A84154311C6BA63D00621871 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		A84154331C6BD27800621871 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -93,11 +103,9 @@
 		A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
 		A8CFFB8F1C690883000E1A7E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		A8CFFB931C691709000E1A7E /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
 		A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersTableViewCell.swift; sourceTree = "<group>"; };
 		A8CFFB991C691F3A000E1A7E /* PictureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
-		A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeResusableVC.swift; sourceTree = "<group>"; };
 		BAE7FBCF493203A7DB9E9C1D /* Pods-Exchangeagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchangeagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exchangeagram/Pods-Exchangeagram.release.xcconfig"; sourceTree = "<group>"; };
 		FD6E8E1402EA65F22B661262 /* Pods-Exchangeagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchangeagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Exchangeagram/Pods-Exchangeagram.debug.xcconfig"; sourceTree = "<group>"; };
 		FD809C6328A83820A73548F2 /* Pods_Exchangeagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exchangeagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,8 +123,11 @@
 				4C77A19C1C6BE46D00AA8126 /* CoreLocation.framework in Frameworks */,
 				4C77A19A1C6BE45D00AA8126 /* CoreGraphics.framework in Frameworks */,
 				4C77A1981C6BE45100AA8126 /* CFNetwork.framework in Frameworks */,
+				4C77A1A91C6C232D00AA8126 /* FBSDKLoginKit.framework in Frameworks */,
 				4C77A1961C6BE3FD00AA8126 /* AudioToolbox.framework in Frameworks */,
+				4C77A1A71C6C232200AA8126 /* FBSDKShareKit.framework in Frameworks */,
 				4C77A1941C6BE3F000AA8126 /* Accounts.framework in Frameworks */,
+				4C77A1AB1C6C233500AA8126 /* FBSDKCoreKit.framework in Frameworks */,
 				4C77A1921C6BE3B400AA8126 /* Social.framework in Frameworks */,
 				11B29FC909E833C0A4897E7B /* Pods_Exchangeagram.framework in Frameworks */,
 			);
@@ -142,6 +153,9 @@
 		2BCE4B8AC2EB39F78842AA36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C77A1AA1C6C233500AA8126 /* FBSDKCoreKit.framework */,
+				4C77A1A81C6C232D00AA8126 /* FBSDKLoginKit.framework */,
+				4C77A1A61C6C232200AA8126 /* FBSDKShareKit.framework */,
 				4C77A1A31C6BE4E800AA8126 /* SystemConfiguration.framework */,
 				4C77A1A11C6BE4D300AA8126 /* StoreKit.framework */,
 				4C77A19F1C6BE4C800AA8126 /* Security.framework */,
@@ -166,6 +180,7 @@
 				4C77A1871C6BDF1E00AA8126 /* Exchangeagram-Bridging-Header.h */,
 				4C77A18D1C6BE1B600AA8126 /* TwitterAuthHelper.h */,
 				4C77A18F1C6BE1C200AA8126 /* TwitterAuthHelper.m */,
+				4C77A1AD1C6C2ADB00AA8126 /* Pacifico.ttf */,
 			);
 			name = "Support Files";
 			sourceTree = "<group>";
@@ -211,9 +226,9 @@
 				4C77A1851C6BDE4B00AA8126 /* Twitter Functionality.swift */,
 				A8CFFB8F1C690883000E1A7E /* SignUpViewController.swift */,
 				A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */,
+				4C77A1B01C6CD48300AA8126 /* ProfileViewController.swift */,
+				4C77A1B21C6CD63500AA8126 /* EditUserViewController.swift */,
 				A8CFFB991C691F3A000E1A7E /* PictureCell.swift */,
-				A8CFFB931C691709000E1A7E /* HomeCollectionViewController.swift */,
-				A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */,
 				A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */,
 				A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */,
 				A84154331C6BD27800621871 /* SearchViewController.swift */,
@@ -352,6 +367,7 @@
 			files = (
 				A8CFFB6A1C6905BA000E1A7E /* LaunchScreen.storyboard in Resources */,
 				A8CFFB671C6905BA000E1A7E /* Assets.xcassets in Resources */,
+				4C77A1AE1C6C2ADB00AA8126 /* Pacifico.ttf in Resources */,
 				A8CFFB621C6905BA000E1A7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,13 +448,13 @@
 				4C77A1861C6BDE4B00AA8126 /* Twitter Functionality.swift in Sources */,
 				A8CFFB5D1C6905BA000E1A7E /* AppDelegate.swift in Sources */,
 				A84154301C6BA53000621871 /* FeedTableViewController.swift in Sources */,
+				4C77A1B11C6CD48300AA8126 /* ProfileViewController.swift in Sources */,
 				A8CFFB961C6919E0000E1A7E /* FollowersViewController.swift in Sources */,
 				A8CFFB921C691109000E1A7E /* ResetPasswordViewController.swift in Sources */,
-				A8CFFB9C1C691F8C000E1A7E /* HomeResusableVC.swift in Sources */,
-				A8CFFB941C691709000E1A7E /* HomeCollectionViewController.swift in Sources */,
 				A84154341C6BD27800621871 /* SearchViewController.swift in Sources */,
 				A8CFFB9A1C691F3A000E1A7E /* PictureCell.swift in Sources */,
 				A8CFFB901C690883000E1A7E /* SignUpViewController.swift in Sources */,
+				4C77A1B31C6CD63500AA8126 /* EditUserViewController.swift in Sources */,
 				A8CFFB8E1C6906C7000E1A7E /* SignInViewController.swift in Sources */,
 				A8CFFB981C691BC7000E1A7E /* FollowersTableViewCell.swift in Sources */,
 			);
@@ -584,6 +600,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Exchangeagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mattdeuschle.Exchangeagram;
@@ -599,6 +619,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Exchangeagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mattdeuschle.Exchangeagram;
