@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E27CAE51C6CD9800044688D /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27CAE41C6CD9800044688D /* PhotoVC.swift */; };
+		0E27CAE71C6CE3AF0044688D /* RootTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27CAE61C6CE3AF0044688D /* RootTabBarVC.swift */; };
+		0E27CAE91C6CE87A0044688D /* AddLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27CAE81C6CE87A0044688D /* AddLocationCell.swift */; };
 		11B29FC909E833C0A4897E7B /* Pods_Exchangeagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD809C6328A83820A73548F2 /* Pods_Exchangeagram.framework */; };
 		4C77A1841C6BDDF600AA8126 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1831C6BDDF600AA8126 /* DataService.swift */; };
 		4C77A1861C6BDE4B00AA8126 /* Twitter Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1851C6BDE4B00AA8126 /* Twitter Functionality.swift */; };
@@ -61,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E27CAE41C6CD9800044688D /* PhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
+		0E27CAE61C6CE3AF0044688D /* RootTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarVC.swift; sourceTree = "<group>"; };
+		0E27CAE81C6CE87A0044688D /* AddLocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationCell.swift; sourceTree = "<group>"; };
 		4C77A1831C6BDDF600AA8126 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4C77A1851C6BDE4B00AA8126 /* Twitter Functionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Twitter Functionality.swift"; sourceTree = "<group>"; };
 		4C77A1871C6BDF1E00AA8126 /* Exchangeagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Exchangeagram-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -225,6 +231,9 @@
 				A84154331C6BD27800621871 /* SearchViewController.swift */,
 				A84154311C6BA63D00621871 /* FeedTableViewCell.swift */,
 				A841542F1C6BA53000621871 /* FeedTableViewController.swift */,
+				0E27CAE41C6CD9800044688D /* PhotoVC.swift */,
+				0E27CAE81C6CE87A0044688D /* AddLocationCell.swift */,
+				0E27CAE61C6CE3AF0044688D /* RootTabBarVC.swift */,
 				A8CFFB661C6905BA000E1A7E /* Assets.xcassets */,
 				4C77A1A51C6BE58B00AA8126 /* Support Files */,
 			);
@@ -320,6 +329,7 @@
 				TargetAttributes = {
 					A8CFFB581C6905BA000E1A7E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WZX9ALEXUY;
 					};
 					A8CFFB6F1C6905BA000E1A7E = {
 						CreatedOnToolsVersion = 7.2;
@@ -431,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E27CAE71C6CE3AF0044688D /* RootTabBarVC.swift in Sources */,
 				A8CFFB651C6905BA000E1A7E /* Exchangeagram.xcdatamodeld in Sources */,
 				4C77A1841C6BDDF600AA8126 /* DataService.swift in Sources */,
 				A84154361C6C3A7000621871 /* CollectionViewCell.swift in Sources */,
@@ -447,7 +458,9 @@
 				A84154341C6BD27800621871 /* SearchViewController.swift in Sources */,
 				A8CFFB9A1C691F3A000E1A7E /* PictureCell.swift in Sources */,
 				A8CFFB901C690883000E1A7E /* SignUpViewController.swift in Sources */,
+				0E27CAE51C6CD9800044688D /* PhotoVC.swift in Sources */,
 				A8CFFB8E1C6906C7000E1A7E /* SignInViewController.swift in Sources */,
+				0E27CAE91C6CE87A0044688D /* AddLocationCell.swift in Sources */,
 				A8CFFB981C691BC7000E1A7E /* FollowersTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,10 +605,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Exchangeagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mattdeuschle.Exchangeagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Exchangeagram/Exchangeagram-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -607,10 +623,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Exchangeagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mattdeuschle.Exchangeagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Exchangeagram/Exchangeagram-Bridging-Header.h";
 			};
 			name = Release;
