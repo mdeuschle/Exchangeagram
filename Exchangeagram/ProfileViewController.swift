@@ -69,6 +69,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     func setCurrentUser() {
         DataService.ds.CURRENT_USER_REF.observeSingleEventOfType(.Value, withBlock: { snapshot in
             
+            print(DataService.ds.CURRENT_USER_REF)
+            print(snapshot.children.allObjects)
             self.currentUser = snapshot.value as! Dictionary<String, AnyObject>
             
             self.navigationItem.title = self.currentUser["username"]!.uppercaseString
@@ -173,6 +175,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
         return cell
     }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return userPhotosArray.count
     }

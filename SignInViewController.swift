@@ -113,14 +113,16 @@ class SignInViewController: UIViewController {
                     
 //                    self.userDefaults.setValue(authData.uid, forKey: "uid")
 //                    DataService.ds.CURRENT_USER_REF.observeEventType(FEventType.Value, withBlock: { snapshot in
-//                        let currentUser = snapshot.value.objectForKey("username") as? String
+//                        let currentUser = snapshot.value.objectForKey("uid") as? String
 //                        print(currentUser)
 //                        self.userDefaults.setValue(currentUser, forKey: "currentUser")
-//                        self.performSegueWithIdentifier("loginSegue", sender: self)
+//                        self.performSegueWithIdentifier("LoginSegue", sender: self)
 //
 //                        
 //                        }, withCancelBlock: { error in
 //                            print(error.description)
+                    
+                    
                     DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { (error, authData) -> Void in
                         
                         let user = ["provider": authData.provider!, "email":email]
