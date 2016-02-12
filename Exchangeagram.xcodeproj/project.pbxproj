@@ -29,6 +29,8 @@
 		4C77A1BF1C6D566A00AA8126 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1BE1C6D566A00AA8126 /* ProfileViewController.swift */; };
 		4C77A1C11C6D577500AA8126 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C77A1C01C6D577500AA8126 /* Pacifico.ttf */; };
 		4C77A1C41C6D59E000AA8126 /* KILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1C31C6D59E000AA8126 /* KILabel.m */; };
+		4C77A1C61C6DA56A00AA8126 /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1C51C6DA56A00AA8126 /* MapViewViewController.swift */; };
+		4C77A1C81C6DA79D00AA8126 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1C71C6DA79D00AA8126 /* EditProfileViewController.swift */; };
 		A84154301C6BA53000621871 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841542F1C6BA53000621871 /* FeedTableViewController.swift */; };
 		A84154321C6BA63D00621871 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154311C6BA63D00621871 /* FeedTableViewCell.swift */; };
 		A84154341C6BD27800621871 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154331C6BD27800621871 /* SearchViewController.swift */; };
@@ -44,11 +46,8 @@
 		A8CFFB8E1C6906C7000E1A7E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */; };
 		A8CFFB901C690883000E1A7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB8F1C690883000E1A7E /* SignUpViewController.swift */; };
 		A8CFFB921C691109000E1A7E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */; };
-		A8CFFB941C691709000E1A7E /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB931C691709000E1A7E /* HomeCollectionViewController.swift */; };
 		A8CFFB961C6919E0000E1A7E /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */; };
 		A8CFFB981C691BC7000E1A7E /* FollowersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */; };
-		A8CFFB9A1C691F3A000E1A7E /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB991C691F3A000E1A7E /* PictureCell.swift */; };
-		A8CFFB9C1C691F8C000E1A7E /* HomeResusableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +92,8 @@
 		4C77A1C01C6D577500AA8126 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
 		4C77A1C21C6D59D800AA8126 /* KILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KILabel.h; sourceTree = "<group>"; };
 		4C77A1C31C6D59E000AA8126 /* KILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KILabel.m; sourceTree = "<group>"; };
+		4C77A1C51C6DA56A00AA8126 /* MapViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
+		4C77A1C71C6DA79D00AA8126 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		A841542F1C6BA53000621871 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		A84154311C6BA63D00621871 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		A84154331C6BD27800621871 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -114,11 +115,8 @@
 		A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
 		A8CFFB8F1C690883000E1A7E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		A8CFFB931C691709000E1A7E /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
 		A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersTableViewCell.swift; sourceTree = "<group>"; };
-		A8CFFB991C691F3A000E1A7E /* PictureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
-		A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeResusableVC.swift; sourceTree = "<group>"; };
 		BAE7FBCF493203A7DB9E9C1D /* Pods-Exchangeagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchangeagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exchangeagram/Pods-Exchangeagram.release.xcconfig"; sourceTree = "<group>"; };
 		FD6E8E1402EA65F22B661262 /* Pods-Exchangeagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchangeagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Exchangeagram/Pods-Exchangeagram.debug.xcconfig"; sourceTree = "<group>"; };
 		FD809C6328A83820A73548F2 /* Pods_Exchangeagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exchangeagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,7 +196,11 @@
 		4C77A1B91C6D560100AA8126 /* Custom Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A8CFFB991C691F3A000E1A7E /* PictureCell.swift */,
+				0E27CAE81C6CE87A0044688D /* AddLocationCell.swift */,
+				A84154351C6C3A7000621871 /* CollectionViewCell.swift */,
+				4C77A1831C6BDDF600AA8126 /* DataService.swift */,
+				A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */,
+				A84154311C6BA63D00621871 /* FeedTableViewCell.swift */,
 				4C77A1BA1C6D564A00AA8126 /* PhotoFeedTableViewCell.swift */,
 				4C77A1BC1C6D565500AA8126 /* Photos.swift */,
 			);
@@ -240,23 +242,18 @@
 			isa = PBXGroup;
 			children = (
 				A8CFFB601C6905BA000E1A7E /* Main.storyboard */,
-				A84154371C6CF83F00621871 /* CommentsViewController.swift */,
-				A84154351C6C3A7000621871 /* CollectionViewCell.swift */,
-				4C77A1831C6BDDF600AA8126 /* DataService.swift */,
 				A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */,
 				4C77A1851C6BDE4B00AA8126 /* Twitter Functionality.swift */,
 				A8CFFB8F1C690883000E1A7E /* SignUpViewController.swift */,
 				A8CFFB911C691109000E1A7E /* ResetPasswordViewController.swift */,
 				4C77A1BE1C6D566A00AA8126 /* ProfileViewController.swift */,
-				A8CFFB931C691709000E1A7E /* HomeCollectionViewController.swift */,
-				A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */,
-				A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */,
-				A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */,
-				A84154331C6BD27800621871 /* SearchViewController.swift */,
-				A84154311C6BA63D00621871 /* FeedTableViewCell.swift */,
+				4C77A1C51C6DA56A00AA8126 /* MapViewViewController.swift */,
+				4C77A1C71C6DA79D00AA8126 /* EditProfileViewController.swift */,
 				A841542F1C6BA53000621871 /* FeedTableViewController.swift */,
+				A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */,
+				A84154371C6CF83F00621871 /* CommentsViewController.swift */,
+				A84154331C6BD27800621871 /* SearchViewController.swift */,
 				0E27CAE41C6CD9800044688D /* PhotoVC.swift */,
-				0E27CAE81C6CE87A0044688D /* AddLocationCell.swift */,
 				0E27CAE61C6CE3AF0044688D /* RootTabBarVC.swift */,
 				A8CFFB661C6905BA000E1A7E /* Assets.xcassets */,
 				4C77A1B91C6D560100AA8126 /* Custom Classes */,
@@ -475,6 +472,7 @@
 				A84154321C6BA63D00621871 /* FeedTableViewCell.swift in Sources */,
 				4C77A1BF1C6D566A00AA8126 /* ProfileViewController.swift in Sources */,
 				4C77A1901C6BE1C200AA8126 /* TwitterAuthHelper.m in Sources */,
+				4C77A1C81C6DA79D00AA8126 /* EditProfileViewController.swift in Sources */,
 				4C77A1861C6BDE4B00AA8126 /* Twitter Functionality.swift in Sources */,
 				A8CFFB5D1C6905BA000E1A7E /* AppDelegate.swift in Sources */,
 				A84154301C6BA53000621871 /* FeedTableViewController.swift in Sources */,
@@ -482,12 +480,10 @@
 				A8CFFB961C6919E0000E1A7E /* FollowersViewController.swift in Sources */,
 				A8CFFB921C691109000E1A7E /* ResetPasswordViewController.swift in Sources */,
 				4C77A1BB1C6D564A00AA8126 /* PhotoFeedTableViewCell.swift in Sources */,
-				A8CFFB9C1C691F8C000E1A7E /* HomeResusableVC.swift in Sources */,
-				A8CFFB941C691709000E1A7E /* HomeCollectionViewController.swift in Sources */,
 				A84154341C6BD27800621871 /* SearchViewController.swift in Sources */,
 				4C77A1C41C6D59E000AA8126 /* KILabel.m in Sources */,
-				A8CFFB9A1C691F3A000E1A7E /* PictureCell.swift in Sources */,
 				A8CFFB901C690883000E1A7E /* SignUpViewController.swift in Sources */,
+				4C77A1C61C6DA56A00AA8126 /* MapViewViewController.swift in Sources */,
 				0E27CAE51C6CD9800044688D /* PhotoVC.swift in Sources */,
 				A8CFFB8E1C6906C7000E1A7E /* SignInViewController.swift in Sources */,
 				0E27CAE91C6CE87A0044688D /* AddLocationCell.swift in Sources */,

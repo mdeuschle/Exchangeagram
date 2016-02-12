@@ -8,7 +8,19 @@
 
 import UIKit
 
+protocol LikeButtonTappedDelegate {
+    func likeButtonTapped (cell: PhotoFeedTableViewCell)
+}
+
+protocol CommentButtonTappedDelegate {
+    func commentButtonTapped (cell: PhotoFeedTableViewCell)
+}
+
 class PhotoFeedTableViewCell: UITableViewCell {
+    
+    //Calling the delegate methods
+    var likeDelegate: LikeButtonTappedDelegate?
+    var delegate: CommentButtonTappedDelegate?
 
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var timestampLabel: UILabel!
@@ -25,7 +37,25 @@ class PhotoFeedTableViewCell: UITableViewCell {
     
     @IBOutlet weak var commentTxtView: UITextView!
     
+    //MARK: Init
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
+    //MARK: Delegate Functions
+    @IBAction func commentButtonPressed(sender: UIButton) {
+        if let delegate = self.delegate {
+            delegate.commentButtonTapped(self)
+        }
+    }
+    
+    @IBAction func onLikeButtonPressed(sender: UIButton){
+        if let likeDelegate = self.likeDelegate {
+            likeDelegate.likeButtonTapped(self)
+        }
+    }
+    
+    //Default functions
     override func awakeFromNib() {
         super.awakeFromNib()
     }

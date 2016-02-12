@@ -23,9 +23,9 @@ class SignInViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     
-    //@IBOutlet weak var loginButton: FBSDKLoginButton!
-    
     var ref: Firebase!
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+
     
     var authHelper: TwitterAuthHelper!
     var accounts: [ACAccount]!
@@ -58,13 +58,6 @@ class SignInViewController: UIViewController {
         backgroundImage.layer.zPosition = -1
         self.view.addSubview(backgroundImage)
         
-        //        //Facebook login prompt
-        //        let loginButton = FBSDKLoginButton()
-        //        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
-        //        loginButton.center = self.view.center
-        //        [self.view .addSubview(loginButton)]
-        //
-        
         
     }
     
@@ -72,6 +65,9 @@ class SignInViewController: UIViewController {
         super.viewWillAppear(true)
         ref = Firebase(url:"https://exchangeogram.firebaseio.com/")
         authHelper = TwitterAuthHelper(firebaseRef:ref, apiKey: "oQMPIlgs15oTS5yAEDhE41CQN")
+    }
+    
+    override func viewDidAppear(animated: Bool) {
     }
     
     // hide keyboard func
@@ -115,6 +111,16 @@ class SignInViewController: UIViewController {
                     
                 } else {
                     
+//                    self.userDefaults.setValue(authData.uid, forKey: "uid")
+//                    DataService.ds.CURRENT_USER_REF.observeEventType(FEventType.Value, withBlock: { snapshot in
+//                        let currentUser = snapshot.value.objectForKey("username") as? String
+//                        print(currentUser)
+//                        self.userDefaults.setValue(currentUser, forKey: "currentUser")
+//                        self.performSegueWithIdentifier("loginSegue", sender: self)
+//
+//                        
+//                        }, withCancelBlock: { error in
+//                            print(error.description)
                     DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { (error, authData) -> Void in
                         
                         let user = ["provider": authData.provider!, "email":email]
@@ -128,7 +134,7 @@ class SignInViewController: UIViewController {
                         let appDelegate : AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                         appDelegate.login()
                     })
-                    
+                        print(DataService.ds.CURRENT_USER_REF)
                 }
             })
         }

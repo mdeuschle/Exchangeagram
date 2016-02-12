@@ -8,7 +8,7 @@
 
 import UIKit
 
-var currentUser: String?
+var currentUsername: String?
 
 
 class FeedTableViewController: UITableViewController {
@@ -24,7 +24,7 @@ class FeedTableViewController: UITableViewController {
         self.title = "Exchangeagram"
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        currentUser = userDefaults.valueForKey("uid") as? String
+        currentUsername = userDefaults.valueForKey("currentUser") as? String
 
         feedArray = ["image1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg","image6.jpg","image7.jpg","image1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg","image6.jpg","image7.jpg"]
 

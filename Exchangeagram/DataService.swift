@@ -16,7 +16,6 @@ class DataService {
     static let ds = DataService()
     
     private var _REF_BASE = Firebase(url: "\(URL_BASE)")
-    //private var _REF_POST = Firebase(url: "\(URL_BASE)/post")
     private var _REF_USER = Firebase(url: "\(URL_BASE)/user")
     private var _PHOTO_REF = Firebase(url: "\(URL_BASE)/photos")
     
@@ -24,12 +23,13 @@ class DataService {
         return _REF_BASE
     }
     
-    //    var REF_POST: Firebase {
-    //        return _REF_POST
-    //    }
     
     var REF_USER: Firebase {
         return _REF_USER
+    }
+    
+    var PHOTO_REF: Firebase {
+        return _PHOTO_REF
     }
     
     var CURRENT_USER_REF: Firebase {
@@ -39,15 +39,11 @@ class DataService {
         return currentUser!
     }
     
-    var PHOTO_REF: Firebase {
-        return self.PHOTO_REF
-    }
-    
     func createNewAccount(uid:String, user: Dictionary<String, AnyObject>) {
         REF_USER.childByAppendingPath(uid).updateChildValues(user)
     }
     
-    func createFireBasePost(uid:String, post: Dictionary<String, AnyObject>) {
+    func createFireBasePost(post: Dictionary<String, AnyObject>) {
         
         let firebaseNewPost = PHOTO_REF.childByAutoId()
         firebaseNewPost.setValue(post)
@@ -57,5 +53,5 @@ class DataService {
     
     
     
-    //end of DataService class
+//end of DataService class
 }
