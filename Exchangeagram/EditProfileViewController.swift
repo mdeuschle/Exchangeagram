@@ -32,9 +32,9 @@ class EditProfileViewController: UIViewController, UITextFieldDelegate, UITextVi
         DataService.ds.CURRENT_USER_REF.observeSingleEventOfType(.Value, withBlock: { snapshot in
             self.currentUser = snapshot.value as! Dictionary<String, AnyObject>
             
-            self.bioTextField.text = self.currentUser["Bio"] as? String
+            self.bioTextField.text = self.currentUser["bio"] as? String
             self.bioTextField?.textColor = UIColor.blackColor()
-            self.nameTextField.text = self.currentUser["name"] as? String
+            self.nameTextField.text = self.currentUser["Full Name"] as? String
             self.usernameTextField.text = self.currentUser["username"] as? String
             self.websiteTextField.text = self.currentUser["website"] as? String
             self.emailTextField.text = self.currentUser["email"] as? String
@@ -53,7 +53,7 @@ class EditProfileViewController: UIViewController, UITextFieldDelegate, UITextVi
     
     //MARK: Actions
     @IBAction func onDoneButtonPressed(sender: UIBarButtonItem) {
-        let currentUserDict = ["Bio": self.bioTextField.text, "name": self.nameTextField.text, "username": self.usernameTextField.text, "email": self.emailTextField.text, "phoneNumber": self.phoneTextField.text]
+        let currentUserDict = ["bio": self.bioTextField.text, "Full Name": self.nameTextField.text, "username": self.usernameTextField.text, "email": self.emailTextField.text, "phoneNumber": self.phoneTextField.text]
         
         DataService.ds.CURRENT_USER_REF.setValue(currentUserDict)
         let userDefaults = NSUserDefaults.standardUserDefaults()

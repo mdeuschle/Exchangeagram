@@ -76,7 +76,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             
             self.navigationItem.title = self.currentUser["username"]!.uppercaseString
             
-            self.fullNameLabel.text = self.currentUser["name"] as? String
+            self.fullNameLabel.text = self.currentUser["Full Name"] as? String
             
             if (self.currentUser["bio"] != nil) {
                 self.bioLabel.text = self.currentUser["bio"] as? String
@@ -115,7 +115,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             self.currentPhotoData.removeAll()
             
             for snapshot in snapshots.children.allObjects as! [FDataSnapshot] {
-                if snapshot.value!["userID"]! as! String == self.userDefaults.stringForKey("uid")! {
+                if snapshot.value!["user"]! as! String == self.userDefaults.stringForKey("uid")! {
                     let decodedData = NSData(base64EncodedString: (snapshot.value["photoString"] as? String)!, options: NSDataBase64DecodingOptions())
                     let decodedImage = UIImage(data: decodedData!)
                     self.userPhotosArray.insert(decodedImage!, atIndex: 0)
