@@ -28,6 +28,7 @@
 		4C77A1BD1C6D565500AA8126 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1BC1C6D565500AA8126 /* Photos.swift */; };
 		4C77A1BF1C6D566A00AA8126 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1BE1C6D566A00AA8126 /* ProfileViewController.swift */; };
 		4C77A1C11C6D577500AA8126 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C77A1C01C6D577500AA8126 /* Pacifico.ttf */; };
+		4C77A1C41C6D59E000AA8126 /* KILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C77A1C31C6D59E000AA8126 /* KILabel.m */; };
 		A84154301C6BA53000621871 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841542F1C6BA53000621871 /* FeedTableViewController.swift */; };
 		A84154321C6BA63D00621871 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154311C6BA63D00621871 /* FeedTableViewCell.swift */; };
 		A84154341C6BD27800621871 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84154331C6BD27800621871 /* SearchViewController.swift */; };
@@ -90,6 +91,8 @@
 		4C77A1BC1C6D565500AA8126 /* Photos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		4C77A1BE1C6D566A00AA8126 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4C77A1C01C6D577500AA8126 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
+		4C77A1C21C6D59D800AA8126 /* KILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KILabel.h; sourceTree = "<group>"; };
+		4C77A1C31C6D59E000AA8126 /* KILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KILabel.m; sourceTree = "<group>"; };
 		A841542F1C6BA53000621871 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		A84154311C6BA63D00621871 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		A84154331C6BD27800621871 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 				4C77A1871C6BDF1E00AA8126 /* Exchangeagram-Bridging-Header.h */,
 				4C77A18D1C6BE1B600AA8126 /* TwitterAuthHelper.h */,
 				4C77A18F1C6BE1C200AA8126 /* TwitterAuthHelper.m */,
+				4C77A1C21C6D59D800AA8126 /* KILabel.h */,
+				4C77A1C31C6D59E000AA8126 /* KILabel.m */,
 			);
 			name = "Support Files";
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 				A8CFFB9C1C691F8C000E1A7E /* HomeResusableVC.swift in Sources */,
 				A8CFFB941C691709000E1A7E /* HomeCollectionViewController.swift in Sources */,
 				A84154341C6BD27800621871 /* SearchViewController.swift in Sources */,
+				4C77A1C41C6D59E000AA8126 /* KILabel.m in Sources */,
 				A8CFFB9A1C691F3A000E1A7E /* PictureCell.swift in Sources */,
 				A8CFFB901C690883000E1A7E /* SignUpViewController.swift in Sources */,
 				0E27CAE51C6CD9800044688D /* PhotoVC.swift in Sources */,
