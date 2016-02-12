@@ -1177,10 +1177,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SJL-eL-Y0X">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W7b-A3-0F9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem id="usf-mq-E5D">
                                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="k7o-mh-UOq">
@@ -1194,14 +1194,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SJL-eL-Y0X" firstAttribute="top" secondItem="W7b-A3-0F9" secondAttribute="bottom" id="4Fk-UL-hS2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="W7b-A3-0F9" secondAttribute="trailing" constant="-20" id="AE7-kc-Jbs"/>
-                            <constraint firstItem="W7b-A3-0F9" firstAttribute="leading" secondItem="bHa-Dd-j1x" secondAttribute="leadingMargin" constant="-20" id="Ira-ir-PN9"/>
-                            <constraint firstItem="W7b-A3-0F9" firstAttribute="top" secondItem="bHa-Dd-j1x" secondAttribute="topMargin" id="M2n-LM-1EL"/>
-                            <constraint firstItem="xPf-OC-ckZ" firstAttribute="top" secondItem="SJL-eL-Y0X" secondAttribute="bottom" id="QwY-Ej-UwR"/>
-                            <constraint firstItem="SJL-eL-Y0X" firstAttribute="top" secondItem="W7b-A3-0F9" secondAttribute="bottom" id="Zng-aP-aP9"/>
-                            <constraint firstItem="SJL-eL-Y0X" firstAttribute="leading" secondItem="bHa-Dd-j1x" secondAttribute="leadingMargin" constant="-20" id="wjf-Ry-qh5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SJL-eL-Y0X" secondAttribute="trailing" constant="-20" id="ybh-T8-dxY"/>
+                            <constraint firstItem="SJL-eL-Y0X" firstAttribute="top" secondItem="W7b-A3-0F9" secondAttribute="bottom" id="N0u-E6-AhZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SJL-eL-Y0X" secondAttribute="trailing" constant="-20" id="S5W-WG-iSi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W7b-A3-0F9" secondAttribute="trailing" constant="-20" id="U5C-xV-I7x"/>
+                            <constraint firstItem="W7b-A3-0F9" firstAttribute="leading" secondItem="bHa-Dd-j1x" secondAttribute="leadingMargin" constant="-20" id="dMe-cH-acD"/>
+                            <constraint firstItem="xPf-OC-ckZ" firstAttribute="top" secondItem="SJL-eL-Y0X" secondAttribute="bottom" id="lMh-1n-oTB"/>
+                            <constraint firstItem="W7b-A3-0F9" firstAttribute="top" secondItem="0m6-RL-CYS" secondAttribute="bottom" id="sYt-2m-Gfk"/>
+                            <constraint firstItem="SJL-eL-Y0X" firstAttribute="leading" secondItem="bHa-Dd-j1x" secondAttribute="leadingMargin" constant="-20" id="tgP-Dm-R73"/>
+                            <constraint firstItem="SJL-eL-Y0X" firstAttribute="top" secondItem="W7b-A3-0F9" secondAttribute="bottom" id="x39-KL-4fA"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
