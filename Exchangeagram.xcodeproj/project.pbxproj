@@ -209,8 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				A8CFFB601C6905BA000E1A7E /* Main.storyboard */,
-				A84154371C6CF83F00621871 /* CommentsViewController.swift */,
-				A84154351C6C3A7000621871 /* CollectionViewCell.swift */,
 				4C77A1831C6BDDF600AA8126 /* DataService.swift */,
 				A8CFFB5C1C6905BA000E1A7E /* AppDelegate.swift */,
 				A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */,
@@ -222,9 +220,11 @@
 				A8CFFB9B1C691F8C000E1A7E /* HomeResusableVC.swift */,
 				A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */,
 				A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */,
+				A84154351C6C3A7000621871 /* CollectionViewCell.swift */,
 				A84154331C6BD27800621871 /* SearchViewController.swift */,
-				A84154311C6BA63D00621871 /* FeedTableViewCell.swift */,
+				A84154371C6CF83F00621871 /* CommentsViewController.swift */,
 				A841542F1C6BA53000621871 /* FeedTableViewController.swift */,
+				A84154311C6BA63D00621871 /* FeedTableViewCell.swift */,
 				A8CFFB661C6905BA000E1A7E /* Assets.xcassets */,
 				4C77A1A51C6BE58B00AA8126 /* Support Files */,
 			);

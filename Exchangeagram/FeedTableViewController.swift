@@ -10,6 +10,7 @@ import UIKit
 
 class FeedTableViewController: UITableViewController {
 
+    var posts: [String: String] = [String: String]()
 
     var feedArray:[String] = []
 
@@ -37,7 +38,6 @@ class FeedTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! FeedTableViewCell
 
         cell.postImage.image = UIImage(named: feedArray[indexPath.row])
-
         cell.likeButton.tag = indexPath.row;
 
         return cell
@@ -52,17 +52,6 @@ class FeedTableViewController: UITableViewController {
         }
     }
 
-
-//    if toggleState == 1 {
-//    player.play()
-//    toggleState = 2
-//    playBtn.setImage(imgPlay,forState:UIControlState.Normal)
-//    } else {
-//    player.pause()
-//    toggleState = 1
-//    playBtn.setImage(imgPause,forState:UIControlState.Normal)
-//    }
-//}
 
 
     /*
