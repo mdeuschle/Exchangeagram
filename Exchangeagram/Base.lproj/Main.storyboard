@@ -521,7 +521,7 @@
                                             <constraint firstAttribute="trailing" secondItem="cXL-fu-6n0" secondAttribute="trailing" id="nww-KX-3cc"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="imageView" destination="cXL-fu-6n0" id="Ibr-2c-Wpv"/>
+                                            <outlet property="photoView" destination="cXL-fu-6n0" id="Led-nu-19y"/>
                                             <segue destination="f7U-T3-uig" kind="show" id="Sn1-sq-btV"/>
                                         </connections>
                                     </collectionViewCell>
@@ -1279,7 +1279,7 @@
         <image name="usertaggedinphoto" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="S4Z-XY-ZDO"/>
+        <segue reference="Sn1-sq-btV"/>
         <segue reference="o4k-TM-GQt"/>
         <segue reference="wDO-1G-bbi"/>
     </inferredMetricsTieBreakers>
