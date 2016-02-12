@@ -38,6 +38,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var collectionViewFlow: UICollectionViewFlowLayout!
     @IBOutlet weak var userImage: UIImageView!
 
+    @IBOutlet weak var logoutButton: UIBarButtonItem!
     
     
     override func viewDidLoad() {

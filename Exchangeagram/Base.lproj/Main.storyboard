@@ -1007,7 +1007,12 @@
                     <tabBarItem key="tabBarItem" title="" image="Contacts" id="il6-4x-9Tj">
                         <inset key="imageInsets" minX="12" minY="13" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" id="NgR-dV-lXT"/>
+                    <navigationItem key="navigationItem" id="NgR-dV-lXT">
+                        <barButtonItem key="rightBarButtonItem" image="Exit" id="hMc-Hy-3Xb">
+                            <inset key="imageInsets" minX="12" minY="13" maxX="0.0" maxY="13"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="bioLabel" destination="etf-bw-isX" id="9iB-71-H4V"/>
@@ -1016,6 +1021,7 @@
                         <outlet property="followerLabel" destination="oPh-Pb-b1y" id="htz-Zw-dWh"/>
                         <outlet property="followingLabel" destination="zsd-er-fZM" id="zMe-yn-Xzr"/>
                         <outlet property="fullNameLabel" destination="7QK-oG-KKw" id="AbP-iT-YLs"/>
+                        <outlet property="logoutButton" destination="hMc-Hy-3Xb" id="1JI-jQ-zN1"/>
                         <outlet property="postLabel" destination="KmO-iV-HYq" id="ifc-uC-Erz"/>
                         <outlet property="segmentControl" destination="aOK-We-Jem" id="jYQ-Tr-iJN"/>
                         <outlet property="tableView" destination="rpL-wm-7a6" id="Yue-Ha-Wpc"/>
@@ -1244,6 +1250,7 @@
         <image name="Book" width="48" height="48"/>
         <image name="Contact Card" width="50" height="50"/>
         <image name="Contacts" width="52" height="52"/>
+        <image name="Exit" width="52" height="52"/>
         <image name="Gender" width="50" height="50"/>
         <image name="Hearts" width="50" height="50"/>
         <image name="Home" width="48" height="48"/>
