@@ -17,10 +17,10 @@ extension SignInViewController {
         authHelper.selectTwitterAccountWithCallback { (error, accounts) -> Void in
             
             self.accounts = accounts as? [ACAccount]
-//            self.selectTwitterAccount(self.accounts)
+            //            self.selectTwitterAccount(self.accounts)
             self.handleMultipleTwitterAccounts(self.accounts)
-
-
+            
+            
         }
     }
     
@@ -30,7 +30,7 @@ extension SignInViewController {
                 //There was an error authenticating
                 print("There was an error autheniticating")
                 print(error.description)
-
+                
             } else {
                 //We have an authenticated Twitter user
                 print(authData.providerData.description)
@@ -86,7 +86,6 @@ extension SignInViewController {
     }
     
     
-
     
     
     
@@ -94,5 +93,6 @@ extension SignInViewController {
     
     
     
-//end of extension
+    
+    //end of extension
 }

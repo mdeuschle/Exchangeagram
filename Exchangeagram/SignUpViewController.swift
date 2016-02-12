@@ -12,8 +12,8 @@ import Firebase
 class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
-    //Profile Image
-    @IBOutlet weak var imageView: UIImageView!
+    //Label
+    @IBOutlet weak var titleLabel: UILabel!
     
     //Textfields
     @IBOutlet weak var usernameTxt: UITextField!
@@ -47,6 +47,22 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         scroller.contentSize.height = self.view.frame.height
         scrollViewHeight = scroller.frame.size.height
         
+        // alignment
+        titleLabel.frame = CGRectMake(10, 40, self.view.frame.size.width - 20, 30)
+        usernameTxt.frame = CGRectMake(10, titleLabel.frame.origin.y + 90, self.view.frame.size.width - 20, 30)
+        passwordTxt.frame = CGRectMake(10, usernameTxt.frame.origin.y + 40, self.view.frame.size.width - 20, 30)
+        repeatPasswordTxt.frame = CGRectMake(10, passwordTxt.frame.origin.y + 40, self.view.frame.size.width - 20, 30)
+        emailTxt.frame = CGRectMake(10, repeatPasswordTxt.frame.origin.y + 60, self.view.frame.size.width - 20, 30)
+        fullNameTxt.frame = CGRectMake(10, emailTxt.frame.origin.y + 40, self.view.frame.size.width - 20, 30)
+        bioTxt.frame = CGRectMake(10, fullNameTxt.frame.origin.y + 40, self.view.frame.size.width - 20, 30)
+        websiteTxt.frame = CGRectMake(10, bioTxt.frame.origin.y + 40, self.view.frame.size.width - 20, 30)
+        
+        signUpButton.frame = CGRectMake(20, websiteTxt.frame.origin.y + 50, self.view.frame.size.width / 4, 30)
+        signUpButton.layer.cornerRadius = signUpButton.frame.size.width / 20
+        
+        cancelButton.frame = CGRectMake(self.view.frame.size.width - self.view.frame.size.width / 4 - 20, signUpButton.frame.origin.y, self.view.frame.size.width / 4, 30)
+        cancelButton.layer.cornerRadius = cancelButton.frame.size.width / 20
+        
         //Check notifications if keyboard is showing or not
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showKeyboard:", name: UIKeyboardWillShowNotification, object: nil)
         
@@ -60,14 +76,14 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.view.addGestureRecognizer(hideTap)
         
         //rounds the image from a square to circle
-        imageView.layer.cornerRadius = imageView.frame.size.width / 2
-        imageView.clipsToBounds = true
+        //      imageView.layer.cornerRadius = imageView.frame.size.width / 2
+        //      imageView.clipsToBounds = true
         
         //Declares the selected image tapped
-        let avatarTap = UITapGestureRecognizer(target: self, action: "loadImg:")
-        avatarTap.numberOfTapsRequired = 1
-        imageView.userInteractionEnabled = true
-        imageView.addGestureRecognizer(avatarTap)
+        //        let avatarTap = UITapGestureRecognizer(target: self, action: "loadImg:")
+        //        avatarTap.numberOfTapsRequired = 1
+        //        imageView.userInteractionEnabled = true
+        //        imageView.addGestureRecognizer(avatarTap)
         
         let backgroundImage = UIImageView(frame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height))
         backgroundImage.image = UIImage(named: "loginBackgroundImage.png")
@@ -92,11 +108,11 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         
     }
     
-    //Connect selected image to the ImageView
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        imageView.image = info[UIImagePickerControllerEditedImage] as? UIImage
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
+    //    //Connect selected image to the ImageView
+    //    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    //        imageView.image = info[UIImagePickerControllerEditedImage] as? UIImage
+    //        self.dismissViewControllerAnimated(true, completion: nil)
+    //    }
     
     //Hide the keyboard if tapped
     func hideKeyboardTap(recognizer: UITapGestureRecognizer) {
