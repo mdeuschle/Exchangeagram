@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Firebase
+
 class FeedTableViewController: UITableViewController {
 
     var posts: [String: String] = [String: String]()
