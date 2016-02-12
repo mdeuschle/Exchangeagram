@@ -16,6 +16,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     var currentPhotoData = [FDataSnapshot]()
     
     var currentUser = Dictionary<String, AnyObject>()
+
     var userPhotosArray = [UIImage]()
     var userDefaults = NSUserDefaults.standardUserDefaults()
     
