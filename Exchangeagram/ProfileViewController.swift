@@ -56,6 +56,10 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
         // receive notification from EditProfileVC
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reload:", name: "reload", object: nil)
+        
+        self.title = "Title"
+        
+
 
     }
 
@@ -64,7 +68,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         getCurrentUserPhotos()
         
         collectionViewFlow.itemSize = CGSize.init(width: view.frame.width / 3, height: view.frame.width / 3)
-    }
+            }
     
     //MARK: Custom function implemented in the viewWillAppear
     
@@ -212,6 +216,18 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
     }
     
+    @IBAction func logout(sender: AnyObject) {
+        // unauth() is the logout method for the current user.
+        DataService.ds.CURRENT_USER_REF.unauth()
+        
+        // unauth() is the logout method for the current user.
+        NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "uid")
+
+        // Head back to Login!
+        let loginViewController = self.storyboard!.instantiateViewControllerWithIdentifier("Login")
+        UIApplication.sharedApplication().keyWindow?.rootViewController = loginViewController
+
+    }
 
 
 //end of class
