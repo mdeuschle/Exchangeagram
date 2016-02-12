@@ -273,9 +273,9 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="jYv-Ci-miY" kind="relationship" relationship="viewControllers" id="NXG-d6-Sal"/>
                         <segue destination="WiS-W9-GhC" kind="relationship" relationship="viewControllers" id="Uel-jO-I1r"/>
                         <segue destination="S0c-j0-24o" kind="relationship" relationship="viewControllers" id="G50-Tj-KOC"/>
+                        <segue destination="jYv-Ci-miY" kind="relationship" relationship="viewControllers" id="lwd-iD-WqD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Die-ge-nbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -543,7 +543,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="cCS-SO-1Tb" secondAttribute="trailing" constant="-20" id="k7C-iA-DSg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="wrJ-bZ-4Mb"/>
+                    <tabBarItem key="tabBarItem" image="Search" id="wrJ-bZ-4Mb">
+                        <inset key="imageInsets" minX="0.0" minY="13" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="nAb-x5-c6d"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -662,7 +664,9 @@
         <scene sceneID="RNA-O8-NCH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S0c-j0-24o" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="tFT-Lu-lxK"/>
+                    <tabBarItem key="tabBarItem" image="Search" id="tFT-Lu-lxK">
+                        <inset key="imageInsets" minX="12" minY="13" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PkD-kB-0jz">
@@ -687,7 +691,9 @@
         <scene sceneID="pS6-ef-BYE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WiS-W9-GhC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="f6Q-T0-7Oe"/>
+                    <tabBarItem key="tabBarItem" image="Home" id="f6Q-T0-7Oe">
+                        <inset key="imageInsets" minX="12" minY="13" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2gz-Fe-wh0">
@@ -804,7 +810,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hqG-qH-os9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5Cg-TL-QI1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blankimage" translatesAutoresizingMaskIntoConstraints="NO" id="8rb-bB-vIn">
@@ -1240,8 +1246,10 @@
         <image name="Contacts" width="52" height="52"/>
         <image name="Gender" width="50" height="50"/>
         <image name="Hearts" width="50" height="50"/>
+        <image name="Home" width="48" height="48"/>
         <image name="Message" width="52" height="52"/>
         <image name="Navigation Toolbar Top " width="50" height="50"/>
+        <image name="Search" width="50" height="50"/>
         <image name="blankimage" width="259" height="194"/>
         <image name="collectionview" width="50" height="50"/>
         <image name="comment" width="270" height="270"/>
@@ -1260,8 +1268,8 @@
         <image name="usertaggedinphoto" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NXG-d6-Sal"/>
         <segue reference="S4Z-XY-ZDO"/>
         <segue reference="o4k-TM-GQt"/>
+        <segue reference="wDO-1G-bbi"/>
     </inferredMetricsTieBreakers>
 </document>
