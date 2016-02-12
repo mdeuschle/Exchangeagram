@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Akg-cD-kl0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1vv-WW-Do3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -791,7 +791,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="cXL-fu-6n0" id="Ibr-2c-Wpv"/>
-                                            <segue destination="WiS-W9-GhC" kind="show" id="adv-md-Jgj"/>
+                                            <segue destination="f7U-T3-uig" kind="show" id="Sn1-sq-btV"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

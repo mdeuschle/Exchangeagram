@@ -21,7 +21,6 @@ class FeedTableViewCell: UITableViewCell
     @IBOutlet weak var numberOfLikeLabel: UILabel!
     @IBOutlet weak var moreButton: UIButton!
 
-
     override func awakeFromNib() {
         super.awakeFromNib()
     }

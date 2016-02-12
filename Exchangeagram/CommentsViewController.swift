@@ -47,7 +47,13 @@ class CommentsViewController: UITableViewController {
         return cell!
     }
 
-    @IBAction func onSendButtonPressed(sender: UIBarButtonItem) {
+    @IBAction func onSendButtonPressed(sender: UIBarButtonItem)
+    {
+        if ref.authData != nil
+        {
             ref.childByAppendingPath("Posts").childByAutoId().setValue(textField.text)
+            ref.childByAppendingPath("user/\(ref.authData.uid)/post").childByAutoId().setValue(textField.text)
+        }
+
     }
 }
