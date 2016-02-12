@@ -19,6 +19,12 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     var userPhotosArray = [UIImage]()
     var userDefaults = NSUserDefaults.standardUserDefaults()
     
+    // refresher variable
+    var refresher : UIRefreshControl!
+    
+    // size of page
+    var page : Int = 12
+    
     //Storyboard Outlets
     @IBOutlet weak var postLabel: UILabel!
     @IBOutlet weak var followerLabel: UILabel!
@@ -36,9 +42,18 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // always vertical scroll
+        self.collectionView?.alwaysBounceVertical = true
+        
+        // background color
+        collectionView?.backgroundColor = .whiteColor()
+        
         //Defaults to the collection view
         tableView.hidden = true
         collectionView.hidden = false
+        
+        // receive notification from EditProfileVC
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reload:", name: "reload", object: nil)
 
     }
 
@@ -56,7 +71,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             
             self.currentUser = snapshot.value as! Dictionary<String, AnyObject>
             
-            //self.fullNameLabel.text? = self.currentUser["username"]!.uppercaseString
+            self.navigationItem.title = self.currentUser["username"]!.uppercaseString
             
             self.fullNameLabel.text = self.currentUser["name"] as? String
             
@@ -65,7 +80,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             }
             else {
                 self.bioLabel.text = "Please click 'Edit Profile' button to add a biography snippet."
-                self.bioLabel.textColor = UIColor.lightGrayColor()
+                self.bioLabel.textColor = UIColor.grayColor()
             }
             
             if self.currentUser["followers"] != nil {
@@ -123,6 +138,9 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             tableView.hidden = false
             collectionView.hidden = true
 
+        } else if segmentControl.selectedSegmentIndex == 2 {
+            performSegueWithIdentifier("MapViewSegue", sender: segmentControl)
+            
         }
         
     }
@@ -147,6 +165,12 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         cell.timestampLabel.text = postData.value?["timestamp"] as? String
         cell.commentsLabel?.text = postData.value?["comments"] as? String
         
+        if postData.value["dateID"] as? String == String(NSDate()) {
+            cell.timestampLabel.text = postData.value["hh:mm:ss"] as? String
+        } else {
+            cell.timestampLabel.text = postData.value["date"] as? String
+        }
+        
         return cell
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -155,13 +179,12 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     //MARK: CollectionView
     
-    //MARK: Collection View
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! PictureCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! CollectionViewCell
         
         let currentPhoto = userPhotosArray[indexPath.row]
-        cell.picImg.image = currentPhoto
+        cell.photoView.image = currentPhoto
         
         return cell
     }
@@ -170,7 +193,16 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         return userPhotosArray.count
     }
     
-    //MARK: Unwind Segue
+    //MARK: Prepare and Unwind Segues
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "MapViewSegue" {
+            let mapVC = segue.destinationViewController as? MapViewViewController
+            mapVC!.currentPhotoData = self.currentPhotoData
+        }
+        
+    }
+    
     @IBAction func unwind(segue: UIStoryboardSegue) {
         
     }

@@ -242,6 +242,10 @@
 			isa = PBXGroup;
 			children = (
 				A8CFFB601C6905BA000E1A7E /* Main.storyboard */,
+<<<<<<< HEAD
+				4C77A1831C6BDDF600AA8126 /* DataService.swift */,
+=======
+>>>>>>> b2e83cba4d09fad9e57b9acbd869e92d54026086
 				A8CFFB8D1C6906C7000E1A7E /* SignInViewController.swift */,
 				4C77A1851C6BDE4B00AA8126 /* Twitter Functionality.swift */,
 				A8CFFB8F1C690883000E1A7E /* SignUpViewController.swift */,
@@ -251,8 +255,18 @@
 				4C77A1C71C6DA79D00AA8126 /* EditProfileViewController.swift */,
 				A841542F1C6BA53000621871 /* FeedTableViewController.swift */,
 				A8CFFB951C6919E0000E1A7E /* FollowersViewController.swift */,
+<<<<<<< HEAD
+				A8CFFB971C691BC7000E1A7E /* FollowersTableViewCell.swift */,
+				A84154351C6C3A7000621871 /* CollectionViewCell.swift */,
+				A84154331C6BD27800621871 /* SearchViewController.swift */,
+				A84154371C6CF83F00621871 /* CommentsViewController.swift */,
+				A841542F1C6BA53000621871 /* FeedTableViewController.swift */,
+				A84154311C6BA63D00621871 /* FeedTableViewCell.swift */,
+				A841542F1C6BA53000621871 /* FeedTableViewController.swift */,
+=======
 				A84154371C6CF83F00621871 /* CommentsViewController.swift */,
 				A84154331C6BD27800621871 /* SearchViewController.swift */,
+>>>>>>> b2e83cba4d09fad9e57b9acbd869e92d54026086
 				0E27CAE41C6CD9800044688D /* PhotoVC.swift */,
 				0E27CAE61C6CE3AF0044688D /* RootTabBarVC.swift */,
 				A8CFFB661C6905BA000E1A7E /* Assets.xcassets */,

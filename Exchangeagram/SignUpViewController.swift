@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     
     //Label
@@ -93,20 +93,25 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         
     }
     
-    
-    //Call picker method to select image
-    func loadImg(recognizer: UIGestureRecognizer) {
-        
-        let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.sourceType = .PhotoLibrary
-        
-        //Allows for cropping when selecting a photo from your library
-        picker.allowsEditing = true
-        
-        presentViewController(picker, animated: true, completion: nil)
-        
+    //MARK: TextField Delegate Functions
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        return textField.resignFirstResponder()
     }
+    
+    
+//    //Call picker method to select image
+//    func loadImg(recognizer: UIGestureRecognizer) {
+//        
+//        let picker = UIImagePickerController()
+//        picker.delegate = self
+//        picker.sourceType = .PhotoLibrary
+//        
+//        //Allows for cropping when selecting a photo from your library
+//        picker.allowsEditing = true
+//        
+//        presentViewController(picker, animated: true, completion: nil)
+//        
+//    }
     
     //    //Connect selected image to the ImageView
     //    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -192,7 +197,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
                     
                 else {
                     DataService.ds.REF_BASE.authUser(email, password: password, withCompletionBlock: { (error, authData) -> Void in
-                        let user = ["password": authData.provider!, "email": email!, "username": username!, "Full Name": fullname!, "bio": bio!, "website": website!]
+                        let user = ["provider": authData.provider!, "email": email!, "username": username!, "name": fullname!, "bio": bio!, "website": website!]
                         DataService.ds.createNewAccount(authData.uid, user: user)
                         
                         
